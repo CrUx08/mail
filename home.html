@@ -18,8 +18,8 @@
    <header class="header">
     <div class="top-left flex">
         <div class="menu">
-            <span class="icon"></span><br>
-            <span class="icon"></span><br>
+            <span class="icon"></span>
+            <span class="icon"></span>
             <span class="icon"></span></div>
      
      <img src="./img/gmail.png" alt="logo">
@@ -27,8 +27,9 @@
          </div>
     <div class="middle-area">
         <div class="search">
-            <ion-icon name="search-outline" class=""hover></ion-icon>
+            <ion-icon name="search-outline" class="hover"></ion-icon>
             <input type="text" placeholder="Search mail" >
+            <ion-icon name="options"></ion-icon>
         </div>
     </div>
     <div class="right-area flex" id="right">
@@ -38,5 +39,26 @@
         <img src="./img/86A7C5DC-0E87-46AD-8782-4B7C3DCAB2CC.JPG" alt="" class="user">
     </div>
    </header>
+   <nav class="nav">
+    <div class="navcont">
+        <div class="navtop">
+            <span class="compose"><ion-icon name="pencil"></ion-icon> Compose</span>
+        </div>
+        <div class="navlist">
+            <ul>
+                <li>
+                    <ion-icon name="image-outline"></ion-icon>Inbox
+                </li>
+                <li>
+                    <ion-icon name="star-outline"></ion-icon> starred
+                </li>
+                <li><ion-icon name="time-outline"></ion-icon>Snoozed</li> 
+                <li><ion-icon name="send-outline"></ion-icon>Sent</li> 
+                <li><ion-icon name="document-outline"></ion-icon>Drafts</li>
+                <li><ion-icon name="chevron-down-outline"></ion-icon>More</li>
+            </ul>
+        </div>
+    </div>
+   </nav>
 </body>
 </html>
