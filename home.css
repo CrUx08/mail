@@ -102,8 +102,15 @@ ion-icon{
     padding: 5px;
     border-radius: 7px;
 }
-.navcont{
+.center{
+    display: flex;
+    width: 100%;
+}
+.nav{
     width: 30%;
+}
+.navcont{
+    width: 100%;
     padding: 20px;
     height: 50%;
     gap: 40px;
@@ -111,7 +118,12 @@ ion-icon{
     flex-direction: column;
     margin-left: -5px;
     padding: 20px;
-    
+    flex-shrink: 0;
+    float: left;
+}
+.navtop{
+    margin-left: -20px;
+    padding-left: 20px;
 }
  .navtop span{
     background-color: rgba(176, 225, 245, 0.898);
@@ -127,14 +139,19 @@ ion-icon{
 span ion-icon{
     height: 20px;
 }
+.navlist{
+    margin-left: -30px;
+    width: 90%;
+}
 .navlist ul li{
     align-self: center;
     font-size: small;
     font-weight: 300;
     display: flex;
     cursor: pointer;
-    width: 56%;
+    width: 75%;
     padding: 10px;
+    padding-left: 30%;
     border-radius: 20px;
     margin-left: -20px;
 }
@@ -147,4 +164,71 @@ li ion-icon{
 }
 .navlist ul  {
     list-style-type: none;
+    
+}
+
+main{
+    float: right;
+    flex : 1;
+}
+
+.container{
+    transition:  all 1s; 
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.2);
+    width: 50%;
+    text-align: center;
+    margin: 15% 25%;
+    padding: 20px 0;
+    gap: 20px;
+    background-color: white;
+}
+
+.container .inputs{
+    margin: 3% 0;
+}
+.inputs input{
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 60%;
+    outline: none;
+    cursor: pointer;
+    border: 0.9px solid gray;
+    font-size: 17px;
+    font-weight: 400;
+    transition: 1s all;
+}
+.inputs input:hover{
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.2);
+    border: none;
+}
+.informtext{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.lgbut input{
+      padding: 15px;
+      width: 45%;
+      font-size: 17px;
+      border: none;
+      border-radius: 7px;
+      color: white;
+      background-color: black;
+      font-weight: 500;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-bottom: 1%;
+      transition:  all 1s ;
+}
+.lgbut input:hover{
+    box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.972);
+    width: 50%;
+}
+.container .top span{
+    font-size: 17px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #495057;
+}
+.container a{
+    text-decoration: none;
+    color: skyblue;
 }
